@@ -28,6 +28,13 @@ int main() {
     char X[] = "AGGTAB";
     char Y[] = "GXTXAYB";
 
-    printf("Length of LCS (Space-Optimized DP): %d\n", lcs_optimized(X, Y));
+    double start,fin,temps_cpu,resultat; ;
+    
+    start = clock();
+    resultat=lcs_optimized(X, Y);
+    fin = clock();
+
+    printf("Length of LCS (Space-Optimized DP): %d\n", resultat);
+    printf("Time: %f\n", (fin-start)/CLOCKS_PER_SEC);
     return 0;
 }
