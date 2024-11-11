@@ -9,6 +9,8 @@ void lcs_optimized(char *X, char *Y, char *lcs_result) {
     int prev[n + 1], current[n + 1];
 
     // Initialize previous row
+
+    
     memset(prev, 0, sizeof(prev));
 
     // Build the LCS length table
